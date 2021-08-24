@@ -20,3 +20,12 @@ Notes:
   - The database uses the standard hashing policy.
   - The database proxy policy is all-master-shards.
   - The database proxy policy does not use node include or exclude.
+
+
+You can monitor the shards with
+- shard-cli ID monitor
+- then check the size of each node with : redis-cli -h IP -p PORT DBSIZE
+
+
+IMPORTANT:
+- to run redis-cli in cluster-mode, use -c
