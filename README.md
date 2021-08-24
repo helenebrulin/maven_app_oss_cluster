@@ -14,3 +14,9 @@ Notes:
 - source ~/.zshrc 
 
 - Need to install slf4j and and commons-pool2 as dependencies as well# maven_app_oss_cluster
+
+
+- Before you enable Redis OSS Cluster API for a database, make sure that:
+  - The database uses the standard hashing policy.
+  - The database proxy policy is all-master-shards.
+  - The database proxy policy does not use node include or exclude.

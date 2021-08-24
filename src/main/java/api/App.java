@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.JedisCluster;
+import redis.clients.jedis.Jedis;
 
 /**
  * An OSS Cluster API test
@@ -28,5 +29,8 @@ public class App {
             jc.set("hello:" + i, "Hello world! #" + i);
             jc.get("hello:" + i);
         }
+
+        //Jedis jedis = new Jedis();
+        //jedis.set("hello", "hello");
     }
 }
