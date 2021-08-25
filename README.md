@@ -29,3 +29,7 @@ You can monitor the shards with
 
 IMPORTANT:
 - to run redis-cli in cluster-mode, use -c
+- to tune cluster api to use external IPs and be able to use JedisCluster outside of the cluster:
+```sh
+tune db db:1 oss_cluster_api_preferred_ip_type external
+```
